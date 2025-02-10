@@ -1,0 +1,23 @@
+/* Ensures home layout is structured properly */
+.home-container {
+  display: flex;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+/* Right Side Content */
+.main-content {
+  flex-grow: 1;
+  margin-left: 280px; /* Same width as sidebar */
+  padding: 20px;
+  background-color: #fff;
+  overflow-y: auto; /* Scroll if content overflows */
+}
+
+/* Responsive: Adjust for smaller screens */
+@media (max-width: 768px) {
+  .main-content {
+      margin-left: 220px; /* Adjust margin for smaller sidebar */
+  }
+}
